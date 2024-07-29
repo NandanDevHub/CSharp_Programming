@@ -1,4 +1,6 @@
-﻿float baseSalary = 50000;
+﻿using CSharp_Programming;
+
+float baseSalary = 50000;
 float hra = 0.5F;
 
 float netSalary = baseSalary - (baseSalary * hra);
@@ -6,6 +8,7 @@ float netSalary = baseSalary - (baseSalary * hra);
 Console.WriteLine("The Base Salary is: " + baseSalary);
 Console.WriteLine("The Salary credited in account will be: " + netSalary);
 
+Console.WriteLine("----------------------------------------------");
 bool isAuthenticated = true;
 
 string result = isAuthenticated ? "logged in" : "logged out";
@@ -25,7 +28,10 @@ switch (result)
         Console.WriteLine("Denied");
         break;
 }
+Console.WriteLine("----------------------------------------------");
+Loops loops = new();
+loops.Looping();
 
-string[] names = new string[5] { "Shikhar Dhawan", "Rohit Sharma", "Virat Kohli", "Suresh Raina", "MS Dhoni" };
+JumpStatements Jp = new();
+Jp.Jumps();
 
-//
