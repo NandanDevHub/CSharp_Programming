@@ -35,3 +35,6 @@ loops.Looping();
 JumpStatements Jp = new();
 Jp.Jumps();
 
+ManipArrays manip = new();
+manip.OneDArray();
+manip.TwoDArray();
