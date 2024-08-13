@@ -38,3 +38,14 @@ Jp.Jumps();
 ManipArrays manip = new();
 manip.OneDArray();
 manip.TwoDArray();
+Console.WriteLine();
+
+
+// Classes & Objects
+// ----------------------------------------------------------------
+
+// Instansiatinon of Class
+
+Student rancho = new Student();
+rancho.acceotDetsils();
+rancho.displayDetails();
