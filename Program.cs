@@ -38,8 +38,7 @@ Jp.Jumps();
 ManipArrays manip = new();
 manip.OneDArray();
 manip.TwoDArray();
-Console.WriteLine();
-
+Console.WriteLine("----------------------------------------------");
 
 // Classes & Objects
 // ----------------------------------------------------------------
@@ -47,5 +46,28 @@ Console.WriteLine();
 // Instansiatinon of Class
 
 Student rancho = new Student();
-rancho.acceotDetsils();
+rancho.acceptDetsils();
 rancho.displayDetails();
+
+Console.WriteLine("----------------------------------------------");
+//Default Constructor
+
+Stud defaultStudent = new();
+defaultStudent.display();
+
+Console.WriteLine("----------------------------------------------");
+// Parameterized Constructor
+Stud parameterizedStudent = new(107, "Rahul");
+parameterizedStudent.display();
+
+
+
+// Inheritance
+Console.WriteLine("----------------------------------------------");
+
+Marks studentMarks = new();
+studentMarks.acceptDetsils();
+studentMarks.displayDetails();
+
+
+

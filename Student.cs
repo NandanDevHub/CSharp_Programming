@@ -8,6 +8,20 @@ namespace CSharp_Programming
 		int studentId;
 		string studentName;
 
+		//Default Constructors
+		public Student()
+		{
+			studentId = 10;
+			studentName = "Annomynus";
+		}
+
+		//Parameterized Constructor
+		public Student(int sid, string sName)
+		{
+			studentId = sid;
+			studentName = sName;
+		}
+
 		//Member Functions // Behavious // Methods
 
 		public void displayDetails()
@@ -16,7 +30,7 @@ namespace CSharp_Programming
             Console.WriteLine("Student Name is" + studentName);
         }
 
-		public void acceotDetsils()
+		public void acceptDetsils()
 		{
 			Console.WriteLine("Enter The Student Id:");
             studentId = int.Parse(Console.ReadLine());
@@ -26,6 +40,35 @@ namespace CSharp_Programming
 
 			Console.WriteLine();
         }
-	}
+    }
+
+	public class Stud
+	{
+        int studId;
+        string studName;
+
+        //Default Constructors
+        public Stud()
+        {
+            studId = 10;
+            studName = "Annomynus";
+        }
+
+        //Parameterized Constructor
+        public Stud(int sid, string sName)
+        {
+            studId = sid;
+            studName = sName;
+        }
+
+
+        // For Understanding Constructors
+
+        public void display()
+        {
+            Console.WriteLine("Student ID is" + studId);
+            Console.WriteLine("Student Name is" + studName);
+        }
+    }
 }
 
