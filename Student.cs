@@ -33,6 +33,7 @@ namespace CSharp_Programming
 		public void acceptDetsils()
 		{
 			Console.WriteLine("Enter The Student Id:");
+
             studentId = int.Parse(Console.ReadLine());
 
 			Console.WriteLine("Enter the Student Name:");
