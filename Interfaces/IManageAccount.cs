@@ -1,7 +1,7 @@
 ﻿using System;
 namespace CSharp_Programming.Interfaces
 {
-	public interface ManageAccount
+	public interface IManageAccount
 	{
 		void openAccount();
 

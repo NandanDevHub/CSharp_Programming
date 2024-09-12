@@ -85,3 +85,23 @@ savingsAccont.withdrawal();
 
 // Interfaces
 Console.WriteLine("----------------------Interfaces------------------------");
+NewSavingsAccount newSavingsAccount = new();
+
+newSavingsAccount.deposit();
+newSavingsAccount.closeAccount();
+
+
+// Static Classes
+Console.WriteLine("----------------------Static Classes------------------------");
+
+//Calculate calculate = new();
+// Above will give the error as -  We cannot create an instance of static class
+
+
+Console.WriteLine(Calculate.count); // Accessing Static Variable
+
+Console.WriteLine(Calculate.increment()); // Accessing Static Methods
+Console.WriteLine(Calculate.increment());
+Console.WriteLine(Calculate.increment());
+
+Console.WriteLine(Calculate.decrement());
