@@ -161,6 +161,26 @@ switch (switchID)
         user.Age = 12;
 
         break;
+
+    case 14:
+        Console.WriteLine("------ Indexers in C# ------");
+        StringIndexerType stringIndexer = new StringIndexerType();
+        stringIndexer[0] = "String One";
+        stringIndexer[1] = "String Two";
+        stringIndexer[2] = "String Three";
+        stringIndexer[3] = "String Four";
+
+        for(int i= 0; i<10; i++)
+        {
+            Console.WriteLine(stringIndexer[i]);
+        }
+        break;
+
+    case 15:
+        Console.WriteLine("------ Enums in C# ------");
+        Enums enums = new();
+        enums.displayWeekDays();
+        break;
 }
 
 
