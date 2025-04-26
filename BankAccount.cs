@@ -26,7 +26,7 @@ namespace CSharp_Programming
 
         public override void withdrawal()
         {
-            Console.WriteLine("Money Widhwrawaled");
+            Console.WriteLine("Money Withdrawal");
         }
     }
 }
