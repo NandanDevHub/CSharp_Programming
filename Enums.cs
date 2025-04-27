@@ -20,7 +20,7 @@ namespace CSharp_Programming
 			Console.WriteLine(WeekDays.Wednesday);
 
 			//To get the integral value of what they represent
-			int day = (int)WeekDays.Sunday; // Type of Interger Type
+			int day = (int)WeekDays.Sunday; // Type of Integer Type
 			Console.WriteLine(WeekDays.Sunday + ":" + day);
 
 			day = (int)WeekDays.Tuesday;

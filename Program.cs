@@ -1,14 +1,20 @@
 ﻿using CSharp_Programming;
 
-int switchID;
-Console.WriteLine("Please Enter the Number to proceed: ");
-switchID = int.Parse(Console.ReadLine());
+foreach (var caseType in Constants.CaseInfo)
+{
+    Console.WriteLine(caseType);
+}
 
-switch (switchID)
+Console.WriteLine("--------------------------------------------------");
+Console.WriteLine("Please enter the CASE NUMBER to proceed: ");
+var switchId = int.Parse(Console.ReadLine() ?? string.Empty);
+
+switch (switchId)
 {
     case 1:
 
         //Basic Datatypes
+        Console.WriteLine("--------------------- Basic Datatypes -------------------------");
         float baseSalary = 50000;
         float hra = 0.5F;
 
@@ -22,6 +28,7 @@ switch (switchID)
 
         // Boolean & Ternary Ops
         // Switch Case
+        Console.WriteLine("--------------------- Operators and Conditional Statements -------------------------");
         bool isAuthenticated = true;
         string result = isAuthenticated ? "logged in" : "logged out";
         Console.WriteLine(result);
@@ -45,6 +52,7 @@ switch (switchID)
     case 3:
 
         // Loops
+        Console.WriteLine("--------------------- Loops -------------------------");
         Loops loops = new();
         loops.Looping();
         break;
@@ -52,6 +60,7 @@ switch (switchID)
     case 4:
 
         // Jump Statements
+        Console.WriteLine("--------------------- Jump Statements -------------------------");
         JumpStatements Jp = new();
         Jp.Jumps();
         break;
@@ -59,6 +68,7 @@ switch (switchID)
     case 5:
 
         //Arrays
+        Console.WriteLine("--------------------- Arrays -------------------------");
         ManipArrays manip = new();
         manip.OneDArray();
         manip.TwoDArray();
@@ -69,7 +79,7 @@ switch (switchID)
 
         //Classes & Objects
         // Instansiatinon of Class
-
+        Console.WriteLine("--------------------- Classes & Objects -------------------------");
         Student rancho = new Student();
         rancho.acceptDetsils();
         rancho.displayDetails();
@@ -180,6 +190,19 @@ switch (switchID)
         Console.WriteLine("------ Enums in C# ------");
         Enums enums = new();
         enums.displayWeekDays();
+        break;
+
+    case 16:
+        Console.WriteLine("----- Exception Handling in C# ----");
+        ExceptionHandling exceptionHandling = new();
+        exceptionHandling.ExHandling(100,0);
+        exceptionHandling.ExFormatHandling();
+        break;
+
+    case 17:
+        Console.WriteLine("----- Anonymous Types in C# ----");
+        AnonymousType anonymousType = new();
+        anonymousType.AnonymousTypeExample();
         break;
 }
 
