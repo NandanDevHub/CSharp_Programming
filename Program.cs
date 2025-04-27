@@ -5,7 +5,7 @@ foreach (var caseType in Constants.CaseInfo)
     Console.WriteLine(caseType);
 }
 
-Console.WriteLine("--------------------------------------------------");
+Console.WriteLine("--------------------------------------------------_");
 Console.WriteLine("Please enter the CASE NUMBER to proceed: ");
 var switchId = int.Parse(Console.ReadLine() ?? string.Empty);
 
